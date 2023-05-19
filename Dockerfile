@@ -1,5 +1,4 @@
 FROM node:lts AS runtime
-WORKDIR /app
 
 COPY . .
 

@@ -43,22 +43,20 @@ const features: Array<FeatureItem> = [
 ];
 ---
 
-<ContentSection title="Features" id="features">
+<ContentSection title="我们的愿景" id="features">
   <Fragment slot="lead">
-    Astro comes <span class="text-primary">batteries included</span>. It takes
-    the best parts of
-    <span class="text-primary">state-of-the-art</span>
-    tools and adds its own <span class="text-primary">innovations</span>.
+    Copi AI 帮助推动 <span class="text-primary">AI民主化</span> 进程。
+    <br /> 走进千家万户，帮助每一位有情感问题的人。
   </Fragment>
   <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
     {
       features.map(({ title, description, icon }) => (
-        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+        <li class="border-default bg-offset flex flex-col items-center gap-4 border p-6">
           <div class="h-16 w-16 rounded-full border-2 border-current p-3">
             <Icon name={icon} />
           </div>
-          <p class="text-center font-extrabold text-xl">{title}</p>
-          <p class="text-center text-offset text-sm">{description}</p>
+          <p class="text-center text-xl font-extrabold">{title}</p>
+          <p class="text-offset text-center text-sm">{description}</p>
         </li>
       ))
     }
